@@ -1,0 +1,236 @@
+*{
+    margin: 0;
+}
+body{
+    background-color: black;
+}
+a{
+    color: aliceblue;
+    font-weight: 900;
+    text-decoration: none;
+}
+nav{
+    position: sticky;
+    top: 0%;
+}
+.container{
+    background: #0025ff;
+    padding: 20px 30px;
+    display:grid;
+    grid-template-columns: 1.4fr 1fr;
+    grid-area:" left-section right-section";
+    
+
+}
+.logo, img{
+    height: 55px;
+}
+.left-section{
+    
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 2fr;
+    justify-content: center;
+    align-items: center;
+   
+}
+.left-section a{
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+   
+}
+.right-section{
+    display: grid;
+    justify-content: end;
+    align-items: center;
+}
+
+@media(max-width:1024px){
+    .r-btn {
+        display: none;
+    }
+ 
+    .items{
+        display: none;
+    }
+    .container{
+        
+        /* display: flex; */
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: "left-section center-section toggle";
+        justify-content: space-between;
+        
+    }
+    .left-section{
+        grid-area: left-section;
+       
+        display: flex;
+        align-items: center;
+        justify-content: start;
+    }
+    .center-section{
+        grid-area: center-section;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .toggle{
+        grid-area: toggle;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+    }
+    .toggle img{
+        color: white;
+    }
+    .right-section{
+        display: grid;
+        justify-content: end;
+        align-items: center;
+    }
+   
+    
+}
+
+@media(min-width:1025px){
+    .toggle{
+        display: none;
+    }
+    .center-section{
+        display: none;
+    }
+   
+}
+.btn{
+    padding: 7px 20px;
+    border-radius: 20px;
+    background: #0025ff;
+    color: white;
+    border: 2px solid white;
+}
+.video-1{
+    width: 100%;
+}
+.s2{
+    background-color: black;
+    padding: 3em 0 0 0;
+    text-align: center;
+}
+.s2-h2 {
+    font-size: 36px;
+    line-height: 36px;
+    color: white;
+    font-family: "PepsiOwners-Extended";
+}
+.s2 h3{
+    font-size: 21px;
+    line-height: 33px; 
+    margin-top: 14px;
+    color: white;
+}
+.s2
+    button {
+        font-family: "PepsiOwners-Regular";
+        font-size: 23px;
+        line-height: 23px;
+        color: #fff;
+        border: none;
+        text-decoration: none;
+        background-color: #0025ff;
+        padding: 0.6em 1em;
+        margin: 1em 0 1.3em 0;
+        cursor: pointer;
+    }
+
+/* media qury */
+@media (min-width: 556px) and (max-width: 991px){
+.s2-h2 {
+    font-size: 61px;
+    line-height: 59px;
+    color: white;
+    /* font-weight: 400; */
+
+ }
+ .s2 h3 {
+    font-size: 35px;
+    line-height: 36px;
+    margin-top: 20px;
+}
+}
+@media (min-width: 992px){
+.s2-h2 {
+    font-size: 70px;
+    line-height: 63px;
+ }
+ .s2 h3 {
+    font-size: 42px;
+    line-height: 42px;
+    margin-top: 0;
+ }
+ .s2 button {
+    font-size: 52px;
+    line-height: 52px;
+    padding: 0.55em;
+    margin: 1em 0 1.3em 0;
+}
+}
+
+.btn-1{
+    display: flex;
+    justify-content: center;
+    
+}
+.s2 img{
+    width: 100%;
+    height: auto;
+}
+.s3 video{
+    width: 100%;
+}
+.social-title{
+    color: #1636ff;
+    text-align: center;
+}
+.social-title h2{
+    font-size: 42px;
+    padding: 1rem 0;
+    font-weight: 900;
+}
+
+
+@media(max-width:768px){
+    .social-title h2{
+        font-size: 2.75rem;
+        line-height: 2.5rem;
+    }
+   
+}
+@media (max-width: 1024px){
+.social-title {
+    font-size: 2.75rem;
+    line-height: 2.5rem;
+ }
+}
+
+.container-model{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    padding: 10px 40px;
+}
+.img-items img{
+    width: 100%;
+    height: 100%;
+    /* transition: transform .3s ease-out,-webkit-transform .3s ease-out */
+}
+@media(max-width:1024px){
+    .container-model{
+        grid-template-columns: 1fr 1fr;
+        padding: 10px 80px;
+    }
+}
+@media(max-width:676px){
+    .container-model{
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr ;
+        padding: 10px 40px;
+    }
+}
